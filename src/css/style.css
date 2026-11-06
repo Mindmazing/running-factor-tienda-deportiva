@@ -39,6 +39,8 @@ h1,
 h2,
 h3 {
   font-family: "Tungsten", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 1;
 }
 
 h1 {
@@ -53,4 +55,59 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   color: var(--text-color);
+}
+
+/* header styles */
+
+header {
+  display: flex;
+  padding: 2em;
+  align-items: center;
+  gap: 3em;
+}
+
+.logo {
+  font-size: 2.2em;
+}
+
+header button {
+  margin-left: auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.6em;
+  padding: 0;
+}
+
+header nav ul li {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  color: var(--accent-color);
+}
+
+header nav ul li:active {
+  color: var(--accent-color);
+}
+
+/* buttons */
+.cta-btn {
+  background-color: var(--accent-color);
+  border: none;
+  padding: 0.7em 2em;
+  border-radius: 2em;
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--text-color);
+  transition: 0.2s;
+  border: 0.1em solid var(--accent-color);
+}
+
+.cta-btn:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--text-color);
 }
