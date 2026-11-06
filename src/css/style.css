@@ -59,19 +59,24 @@ body {
 
 /* header styles */
 
+header > div:first-child {
+  justify-self: start;
+}
+
+header > div:last-child {
+  justify-self: end;
+}
+
 header {
-  display: flex;
-  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   align-items: center;
-  gap: 3em;
+  padding: 1em 2em;
 }
 
 .logo {
   font-size: 2.2em;
-}
-
-header button {
-  margin-left: auto;
 }
 
 header nav ul {
@@ -94,7 +99,7 @@ header nav ul li:active {
   color: var(--accent-color);
 }
 
-/* buttons */
+/* cta buttons */
 .cta-btn {
   background-color: var(--accent-color);
   border: none;
