@@ -8,6 +8,26 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Inter";
+  src:
+    url("Inter18pt-Light.woff2") format("woff2"),
+    url("Inter18pt-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("../assets/fonts/Inter18pt-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Inter18pt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --primary-color: #222831;
   --secondary-color: #393e46;
@@ -30,5 +50,6 @@ h2 {
 
 body {
   background-color: var(--primary-color);
+  font-family: sans-serif;
   color: var(--text-color);
 }
