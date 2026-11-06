@@ -8,6 +8,13 @@
   font-display: swap;
 }
 
+:root {
+  --primary-color: #222831;
+  --secondary-color: #393e46;
+  --text-color: #eeeeee;
+  --accent-color: #d65a31;
+}
+
 h1,
 h2,
 h3 {
